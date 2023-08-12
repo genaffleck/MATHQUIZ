@@ -558,7 +558,6 @@ function startQuiz() {
   score = 0;
   nextButton.innerText = "Next";
   showQuestion();
-  MathJax.typesetPromise();
 }
 
 function showQuestion() {
