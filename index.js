@@ -572,10 +572,10 @@ function showQuestion() {
     button.innerText = answer.text;
     button.classList.add("btn");
     answerButtons.appendChild(button);
+    MathJax.typesetPromise();
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
-    MathJax.typesetPromise();
     button.addEventListener("click", selectAnswer);
   });
 }
